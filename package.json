@@ -1,0 +1,25 @@
+{
+  "name": "pusher-auth-everything",
+  "version": "1.0.0",
+  "description": "[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benfoxall/pusher-auth-everything.git"
+  },
+  "author": "Ben Foxall (@benjaminbenben)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benfoxall/pusher-auth-everything/issues"
+  },
+  "homepage": "https://github.com/benfoxall/pusher-auth-everything#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.7.1",
+    "express": "^4.14.0",
+    "pusher": "^1.3.1"
+  }
+}
