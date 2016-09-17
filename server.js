@@ -28,4 +28,19 @@ app.post('/pusher/auth', (req, res) => {
   }
 })
 
+app.post('/pusher/auth/:socket_id/:channel_name', (req, res) => {
+  const socket_id     = req.params.socket_id
+  const channel_name  = req.params.channel_name
+  if(socket_id && channel_name) {
+    res.send(pusher.authenticate(
+      socket_id,
+      channel_name,
+      {user_id: socket_id, user_info: {}}
+    ))
+  } else {
+    res.sendStatus(401)
+  }
+})
+
+
 app.listen(process.env.PORT || 3000)
