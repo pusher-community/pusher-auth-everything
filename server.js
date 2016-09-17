@@ -28,7 +28,7 @@ app.post('/pusher/auth', (req, res) => {
   }
 })
 
-app.post('/pusher/auth/:socket_id/:channel_name', (req, res) => {
+app.get('/pusher/auth/:socket_id/:channel_name', (req, res) => {
   const socket_id     = req.params.socket_id
   const channel_name  = req.params.channel_name
   if(socket_id && channel_name) {
