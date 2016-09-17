@@ -18,7 +18,7 @@ app.post('/pusher/auth', (req, res) => {
   const socket_id     = req.body.socket_id
   const channel_name  = req.body.channel_name
   if(socket_id && channel_name) {
-    res.send(Pusher.authenticate(
+    res.send(pusher.authenticate(
       socket_id,
       channel_name,
       {user_id: socket_id, user_info: {}}
