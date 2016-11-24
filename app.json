@@ -1,7 +1,7 @@
 {
   "name": "Pusher Auth-Everything",
   "description": "Gives an authentication route that allows you to authorise all requests",
-  "repository": "https://github.com/benfoxall/pusher-auth-everything",
+  "repository": "https://github.com/pusher-community/pusher-auth-everything",
   "logo": "https://node-js-sample.herokuapp.com/node.png",
   "keywords": ["node", "express", "static", "pusher", "auth"],
   "env": {
